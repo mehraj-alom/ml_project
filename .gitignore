@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code and other IDEs
+.vscode/
+.idea/
+
+# Logs and data
+*.log
+*.csv
+*.tsv
+*.json
+
+# Build artifacts
+*.egg-info/
+dist/
+build/

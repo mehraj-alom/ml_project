@@ -1,0 +1,21 @@
+tensorflow
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+notebook
+dvc
+python-box
+pyYAML
+tqdm
+ensure
+joblib
+types-pyYAML
+scipy
+FastAPI
+uvicorn
+pydantic
+requests
+pytest
+-e .
