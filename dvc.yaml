@@ -19,7 +19,8 @@ stages:
       - WEIGHTS 
       - LEARNING_RATE
     outs:
-      - artifacts/prepare_base_model
+      - artifacts/prepared_base_model
+
 
   training:
     cmd: python src/Classifier/pipeline/stage_03_training.py
@@ -28,7 +29,7 @@ stages:
       - src/Classifier/components/prepare_callbacks.py
       - config/config.yaml
       - artifacts/data_ingestion/Chicken-fecal-images
-      - artifacts/prepare_base_model
+      - artifacts/prepared_base_model 
     params:
       - IMAGE_SIZE
       - EPOCHS
@@ -48,7 +49,7 @@ stages:
       - IMAGE_SIZE
       - BATCH_SIZE
     outs:
-      - scores.json :
+      - scores.json:
           cache: false
 
 
