@@ -96,6 +96,7 @@ jobs:
             -e "AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}" \
             ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
 
+
       - name: Clean previous images and containers
         run: |
           docker system prune -f
