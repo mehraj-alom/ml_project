@@ -1,4 +1,6 @@
 #FOR CI/ CD pIPELINE
+name: workflow
+
 on:
   push:
     branches:
@@ -13,7 +15,8 @@ permissions:
 jobs:
   integration:
     name: Continuous Integration
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
