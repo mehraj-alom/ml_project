@@ -4,6 +4,7 @@
 **A complete end-to-end Machine Learning project for classifying Chicken disease , built with a modular pipeline, experiment tracking, and deployment ready with Docker & Streamlit.**
 
 ## 📂 Project Structure
+```
 ├── artifacts/               # Saved artifacts from training
 ├── config/                  # Configuration files
 ├── logs/                    # Training and evaluation logs
@@ -33,6 +34,8 @@
 ├── scores.json              # Model evaluation scores
 ├── README.md                # Project documentation
 └── .gitignore               # Git ignore file
+```
+
 
 
 ## ⚙️ Tech Stack & Tools
