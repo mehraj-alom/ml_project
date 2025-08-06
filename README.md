@@ -52,14 +52,18 @@
 **1️⃣ Clone the Repository**
  - git clone https://github.com/mehraj-alom/ml_project.git
  -   cd ml_project
+   
 **2️⃣ Setup Virtual Environment**
 - python3 -m venv venv
 - source venv/bin/activate  # Linux / Mac
 - venv\Scripts\activate     # Windows
+  
 **3️⃣ Install Dependencies**
 - pip install -r requirements.txt
+  
 **4️⃣ Run Training Pipeline**
 - python main.py
+  
 **5️⃣ Run the Streamlit App**
 - streamlit run app.py
 
