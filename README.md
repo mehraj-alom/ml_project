@@ -71,12 +71,12 @@
 
   **🐳 Run with Docker**
   -  Pull the image
-    - docker pull mehrajalom/chicken:latest
+      - docker pull mehrajalom/chicken:latest
 
   - Run the image
-    - docker run -p 8501:8501 mehrajalom/chicken:latest
+      - docker run -p 8501:8501 mehrajalom/chicken:latest
   - Open Browser and paste it 
-    - http://localhost:8501
+      - http://localhost:8501
 
 
 
