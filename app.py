@@ -39,7 +39,7 @@ if uploaded_file is not None:
     with open(temp_image_path, "wb") as f:
         f.write(uploaded_file.read())
 
-    image = Image.open(temp_image_path)  # ✅ Correctly open image
+    image = Image.open(temp_image_path)  
     st.image(image, caption="Uploaded Image", use_container_width=True) 
 
     if st.button("Predict"):
@@ -50,5 +50,7 @@ if uploaded_file is not None:
             st.success(f"✅ Prediction: {result[0]['image']}")
         except Exception as e:
             st.error(f"❌ Error during prediction: {str(e)}")
+
+
 
         os.remove(temp_image_path)
