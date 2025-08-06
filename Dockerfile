@@ -1,14 +1,14 @@
 # Use official slim Python image
 FROM python:3.11-slim
 
-# Environment variables
+# Environmental variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-# Set working directory
+# Setting working directory
 WORKDIR /app
 
-# Install system dependencies & AWS CLI
+# Installing system dependencies & AWS CLI
 RUN apt-get update && \
     apt-get install -y \
         build-essential \
@@ -17,7 +17,7 @@ RUN apt-get update && \
         awscli \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy project files
+# Coping project files
 COPY . /app
 
 # Install Python dependencies
@@ -27,8 +27,8 @@ RUN pip install --upgrade pip && \
 # Expose Streamlit port
 EXPOSE 8501
 
-# Add src to Python path
+# Addding src to Python path
 ENV PYTHONPATH="${PYTHONPATH}:/app/src"
 
-# Run the app
+#  MAIN APP the app
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
