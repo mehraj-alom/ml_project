@@ -50,8 +50,8 @@
 
 ## 🚀 How to Run
 **1️⃣ Clone the Repository**
- -- > git clone https://github.com/mehraj-alom/ml_project.git
---  > cd ml_project
+ - git clone https://github.com/mehraj-alom/ml_project.git
+ -   cd ml_project
 **2️⃣ Setup Virtual Environment**
 - python3 -m venv venv
 - source venv/bin/activate  # Linux / Mac
